@@ -8,7 +8,7 @@ const pinoutConfig = {
 };
 
 dhtSensor.read(22, pinoutConfig.dhtIn, (error, temperature, humidity) => {
-  if (err) {
+  if (error) {
     console.log('error dht in');
     return;
   }
@@ -18,13 +18,13 @@ dhtSensor.read(22, pinoutConfig.dhtIn, (error, temperature, humidity) => {
 
 let con = mysql.createConnection(dbConfig);
 
-con.connect(err => {
-  if (err) {
-    throw err;
+con.connect(error => {
+  if (error) {
+    throw error;
   }
-  con.query('SELECT * FROM users', (err, result) => {
-    if (err) {
-      throw err;
+  con.query('SELECT * FROM users', (error, result) => {
+    if (error) {
+      throw error;
     }
     console.log('users', JSON.stringify(result[0]));
   })
