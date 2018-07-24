@@ -1,0 +1,30 @@
+{
+  "name": "smart-home-backend",
+  "version": "1.0.0",
+  "description": "smartHome Backend node.js based",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radoslawpoplawski/smart-home-backend.git"
+  },
+  "keywords": [
+    "smart",
+    "home"
+  ],
+  "author": "radoslaw.poplawski@gazeta.pl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/radoslawpoplawski/smart-home-backend/issues"
+  },
+  "homepage": "https://github.com/radoslawpoplawski/smart-home-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mysql": "^2.16.0",
+    "node-dht-sensor": "^0.0.34",
+    "onoff": "^3.1.0"
+  }
+}
